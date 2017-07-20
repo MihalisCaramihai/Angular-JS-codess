@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+
+	
+	<!-- <div data-ng-app="myApp" data-ng-controller="myCtrl" style="font-size: 120px">
+	adding a controller<br>
+		{{ firstName + " " + lastName }}
+	</div>
+
+	<script>
+		var app = angular.module("myApp", []);
+
+		app.controller("myCtrl", function($scope){
+			$scope.firstName = "Moll";
+			$scope.lastName = "Booboo";
+		});
+	</script> -->
+
+
+	<!-- <div style="font-size: 120px" ng-app="myApp" w3-test-directive>adding a directive<br></div>
+	<script>
+		
+	var app = angular.module("myApp", []);
+	app.directive("w3TestDirective", function(){
+		return {
+			template : "I was made in a directive constructor!"
+		};
+	});
+	</script> -->
+
+
+	<!-- <div data-ng-app="myApp" data-ng-controller="myCtrl"   style="font-size: 200px">
+	Adding a directive.<br>
+		{{ firstName + " " + lastName }}
+	</div>
+
+	<script src="myApp.js"></script>
+	<script src="myCtrl.js"></script> -->
+
+
+	<!-- <div data-ng-app="" data-ng-init="names=['Jani','Hege','Kai']" style="font-size: 50px">
+	Repeating HTML Elements
+		<ul>
+			<li ng-repeat="x in names">
+			{{ x }}
+			</li>
+		</ul>
+	</div> -->
+
+
+	<div ng-app="" ng-init="names=[
+	{name:'Jani',country:'Norway'},
+	{name:'Hege',country:'Sweden'},
+	{name:'Kai',country:'Denmark'}]" style="font-size: 140px">		
+	<ul>
+		<li data-ng-repeat="x in names">
+		{{ x.name + ', ' + x.country}}
+		</li>
+	</ul>
+	</div>
+
+
+
+<!-- Create New Directives -->
+
+
+</body>
+</html>
